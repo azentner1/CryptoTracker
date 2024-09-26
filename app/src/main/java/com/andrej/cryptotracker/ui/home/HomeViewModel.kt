@@ -62,7 +62,7 @@ class HomeViewModel @Inject constructor(
     }
 
     private fun fetchCryptoTickers() {
-        viewModelScope.launch {
+        viewModelScope.launch(Dispatchers.IO) {
             _state.value = if (isInitialLoad) HomeState.Loading else _state.value
             try {
                 val tickers = fetchTickersUseCase.execute()
@@ -79,7 +79,7 @@ class HomeViewModel @Inject constructor(
     }
 
     private fun filterTickers(query: String) {
-        viewModelScope.launch() {
+        viewModelScope.launch(Dispatchers.IO) {
             val filteredTickers = fetchedTickers.filter {
                 it.formattedSymbol.contains(query, ignoreCase = true)
             }
@@ -88,7 +88,7 @@ class HomeViewModel @Inject constructor(
     }
 
     private fun refreshTickers() {
-        viewModelScope.launch {
+        viewModelScope.launch(Dispatchers.IO) {
             while (isActive) {
                 sendIntent(HomeIntent.LoadTickers)
                 delay(refreshInterval)

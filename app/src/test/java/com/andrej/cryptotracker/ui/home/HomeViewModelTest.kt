@@ -39,6 +39,8 @@ class HomeViewModelTest {
     @Before
     fun setUp() {
         Dispatchers.setMain(testDispatcher)
+        mockkStatic(Dispatchers::class)
+        every { Dispatchers.IO } returns testDispatcher
         repository = mockk()
         fetchTickersUseCase = FetchTickersUseCase(repository)
 
