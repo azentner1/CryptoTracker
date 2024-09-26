@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">CryptoTracker</string>
+    <string name="failed_to_load_tickers">Failed to load tickers.</string>
+    <string name="you_are_offline">You are offline.</string>
+    <string name="search_for_tickers">Search for tickers...</string>
+    <string name="clear_text">Clear text</string>
+    <string name="price">Price: %1$s</string>
+    <string name="change">Change: %1$s</string>
 </resources>
