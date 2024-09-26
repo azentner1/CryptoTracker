@@ -94,5 +94,6 @@ bash
 
 ./gradlew test
 
-📱 Screenshots
+📱 Demo
+[Uploading Screen_recording_20240926_024326.webm…]()
 
