@@ -1,6 +1,7 @@
-CryptoTracker
+# CryptoTracker
 
 CryptoTracker is a cryptocurrency tracking app that provides users with real-time information on crypto trading pairs. The app retrieves live crypto data, including the latest price, daily percentage change, and volume, and displays it in an user-friendly interface.
+
 🚀 Features
 
     Displays live data for various crypto trading pairs (e.g., BTCUSD, ETHUSD).
@@ -93,5 +94,7 @@ bash
 
 ./gradlew test
 
-📱 Screenshots
+📱 Demo
+
+[Screen_recording_20240926_024326.webm](https://github.com/user-attachments/assets/ec422e96-d089-47c3-9019-fa8dbdadd1e1)
 
