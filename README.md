@@ -95,5 +95,6 @@ bash
 ./gradlew test
 
 📱 Demo
-[Uploading Screen_recording_20240926_024326.webm…]()
+
+[Screen_recording_20240926_024326.webm](https://github.com/user-attachments/assets/ec422e96-d089-47c3-9019-fa8dbdadd1e1)
 
